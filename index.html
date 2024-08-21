@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura to Social Credits Converter</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="converter">
+        <h1>Aura to Social Credits Converter</h1>
+        
+        <div class="conversion">
+            <label for="auraInput">Aura:</label><br>
+            <input type="number" id="auraInput" placeholder="Enter Aura" oninput="convertToSocialCredits()">
+            <span class="arrow">↕</span>
+            <label for="socialCreditsInput">Social Credits:</label><br>
+            <input type="number" id="socialCreditsInput" placeholder="Enter Social Credits" oninput="convertToAura()">
+        </div>
+    </div>
+
+    <div class="attr">
+      <i>by Spikerko</i>
+    </div>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
