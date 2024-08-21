@@ -3,8 +3,6 @@ function convertToSocialCredits() {
     if (!isNaN(aura)) {
         const socialCredits = (aura / 100) * 15;
         document.getElementById("socialCreditsInput").value = socialCredits.toFixed(2);
-    } else {
-        document.getElementById("socialCreditsInput").value = "";
     }
 }
 
@@ -13,11 +11,13 @@ function convertToAura() {
     if (!isNaN(socialCredits)) {
         const aura = (socialCredits / 15) * 100;
         document.getElementById("auraInput").value = aura.toFixed(2);
-    } else {
-        document.getElementById("auraInput").value = "";
     }
 }
 
+document.getElementById("auraInput").addEventListener("input", () => {
+    convertToSocialCredits();
+});
 
-document.querySelector("#auraInput").addEventListener("input", convertToAura)
-document.querySelector("#socialCreditsInput").addEventListener("input", convertToSocialCredits)
+document.getElementById("socialCreditsInput").addEventListener("input", () => {
+    convertToAura();
+});
