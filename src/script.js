@@ -17,3 +17,7 @@ function convertToAura() {
         document.getElementById("auraInput").value = "";
     }
 }
+
+
+document.querySelector("#auraInput").addEventListener("input", convertToAura)
+document.querySelector("#socialCreditsInput").addEventListener("input", convertToSocialCredits)
