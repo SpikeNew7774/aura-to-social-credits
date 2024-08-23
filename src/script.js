@@ -21,3 +21,7 @@ document.getElementById("auraInput").addEventListener("input", () => {
 document.getElementById("socialCreditsInput").addEventListener("input", () => {
     convertToAura();
 });
+
+document.querySelector(".github").addEventListener("click", () => {
+    window.open("https://github.com/SpikeNew7774/aura-to-social-credits", "_blank")
+});
